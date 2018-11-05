@@ -6,28 +6,32 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <header>
-    <div class="header">
-      <div class="container ">
+  <header class="header">
+    <div class="container">
+      <div class="header-row">
         <div class="logo">
           <span class="logo_title">Diez</span>
         </div>
         <div class="nav">
           <ul class="nav_list">
-           <li class="nav_item">
-            <a href="#" class="nav_link">Направления
-            </a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">О школе</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Видео</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Контакты</a>
-          </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Направления</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">О школе</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Видео</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Контакты</a>
+            </li>
           </ul>
+        </div>
+        <div class="burger-wrap">
+          <button class="burger_btn">
+            <span>Меню</span>
+          </button>
         </div>
       </div>
     </div>
@@ -38,8 +42,13 @@
       <div class="container">
         <div class="main_promo">
           <div class="promo_blog">
-        <h1 class="promo_title">Diez — школа<br> музыкального искусства</h1>
-        <p class="promo_text">Научим петь, играть на инструментах, не бояться<br> сцены и получать удовольствие от музыки</p>
+        <h1 class="promo_title">Diez — школа музыкального искусства</h1>
+        <h1 class="promo_title-mobile">Школа музыкального искусства</h1>
+        <p class="promo_text">Научим петь,играть на инструментах, не бояться сцены и получать удовольствие от музыки
+        </p>
+        <p class="promo_text-mobile">
+          Научим петь, играть на<br>инструментах, получать<br> удовольствие от музыки и<br>не бояться сцены
+        </p>
         </div>
 
         <!-- ФОРМА -->
@@ -62,38 +71,67 @@
               </label>
             </form>
           </div>
+          <div class="button-wrap">
+            <button class="button">
+              <p class="btn-title">Вводный урок</p>
+            </button>
+          </div>
         </div> 
       </div>
+
     </section>
+
+
     <section class="directions">
       <div class="container">
-        <div class="directions_title">
-          <h2 class="title">Растим музыкантов</h2>
-        </div>
-        <div class="directions_set">
-          <article class="directions_card directions_card-guitar">
-            <h3 class="directions_card-title">Гитара</h3>
-            <p class="directions_card-text">Хочешь играть как Джими<br> Хендрикс, Би Би Кинг или<br>Андрес Сеговия— мы<br>научим</p>
-            <span class="directions_price">1 урок от 800₽</span>
-          </article>
-          <article class="directions_card directions_card-vocal">
-            <h3 class="directions_card-title">Вокал</h3>
-            <p class="directions_card-text">Академический, рок, эстрадный, джазовый</p>
-          </article>
-          <article class="directions_card directions_card-piano">
-            <h3 class="directions_card-title">Фортепиано</h3>
-            <p class="directions_card-text">Академический, рок, эстрадный, джазовый </p>
-          </article>
-          <article class="directions_card directions_card-lectures">
-            <h3 class="directions_card-title">Лекции</h3>
-            <p class="directions_card-text">Подтяни свои знания в теории музыки</p>
-          </article>
-          <article class="directions_card-all">
-            <h3 class="directions_card-title">Все направления</h3>
-          </article>
+        <div class="directions_row">
+          <div class="directions_title">
+            <h2 class="title direction_title">Растим музыкантов</h2>
+          </div>
+          <div class="directions_set">
+            <article class="directions_card card-vocal">
+              <h3 class="directions_card-title">Вокал</h3>
+              <p class="directions_card-text">Академический, рок, эстрадный, джазовый</p>
+              <p class="directions_card-text--mobile">
+                Пой, как Селин Дион и Эми Вайнхаус
+              </p>
+            </article>
+            <article  class="directions_card card-guitar">
+              <h3 class="directions_card-title">Гитара</h3>
+              <p class="directions_card-text">Хочешь играть как Джими<br> Хендрикс, Би Би Кинг или<br>Андрес Сеговия— мы<br>научим</p>
+              <p class="directions_card-text--mobile">
+              Начни играть, как Джими Хендрикс
+              </p>
+              <span class="directions_price">1 урок от 800₽</span>
+            </article>
+            <div class="direction_row">
+              <article class="directions_card card-piano">
+                <h3 class="directions_card-title">Фортепиано</h3>
+                <p class="directions_card-text">Академический, рок, эстрадный, джазовый </p>
+                <p class="directions_card-text--mobile">
+                Чувствуй клавиши, как Людовико Эйнауди
+                </p>
+              </article>
+              <div class="directions-wrap">
+                <button class="direction_btn">
+                  <p class="directions_btn-title">Все направления</p>
+                </button>
+              </div>
+            </div>
+            <article class="directions_card-lesson">
+              <h3 class="directions_card-title">Лекции</h3>
+              <p class="directions_card-text">Подтяни свои знания в теории музыки</p>
+            </article>
+            <article class="directions_card">
+              <h3 class="directions_card-title">Все направления</h3>
+            </article>
+            
+          </div>
         </div>
       </div>
     </section>
+
+
     <section class="pace">
       <div class="container">
           <div class="pace_title">
@@ -101,18 +139,33 @@
           </div>
           <div class="news">
           
-            <arcticle class="news_card news_card-composition">
+            <article class="news_card news_card-composition">
               <h3 class="news_card-title">Состав</h3>
               <p class="news_card-text">Тебя будут обучать  профессионалы с высшим музыкальным образованием</p>
-            </arcticle>
-            <arcticle class="news_card news_card-result">
-              <h3>Результат</h3>
+              <p class="news_card-text--mobile">
+                Учись только у профессионалов
+              </p>
+            </article>
+            <article class="news_card news_card-result">
+              <h3 class="news_card-title">Результат</h3>
               <p class="news_card-text">Выступи на отчетном концерте через три месяца обучения</p>
-            </arcticle>
-            <arcticle class="news_card news_card-studio">Студия</h3>
-              <p class="news_card-text">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
-            </arcticle>
-          
+              <p class="news_card-text--mobile">
+              Выуступай на отчетных концертах
+              </p>
+            </article>
+            <div class="news_row">
+              <article class="news_card news_card-studio">
+                <h3 class="news_card-title">Студия</h3>
+                <p class="news_card-text">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+                <p class="news_card-text--mobile">Записывай песни каждый месяц
+                </p>
+              </article>
+              <div class="news-wrap">
+                <button class="news_btn">
+                  <p class="news_btn-title">Вводный урок</p>
+                </button>
+              </div>
+            </div>
         </div>
 
          <!-- ФОРМА -->
@@ -139,23 +192,27 @@
     </section>
     <section class="video">
       <div class="container">
+
         <div class="video_title">
           <h2 class="title">В стенах школы</h2>
         </div>
         <div class="content_videos">
-          <article class="video_card video_card-big">
+          <article class="video_card video_card1">
             <h3 class="video_card-title">Зимняя вишня</h3>
             <span class="video_card-text">Заключительный зимний<br> концерт 2017 года<br> выступало 97 учеников</span>
+            <span class="video_card-text--mobile">
+            Финальный концерт 2018 года
+            </span>
           </article>
-          <article class="video_card video_card1">
+          <article class="video_card video_card2">
             <h3 class="video_card-title">Янг Чжо</h3>
             <span class="video_card-text">Репетиция сольной партии скрипки</span>
           </article>
-          <article class="video_card video_card2">
+          <article class="video_card video_card3">
             <h3 class="video_card-title">Летний штиль</h3>
             <span class="video_card-stage">За кулисами концерта</span>
           </article>
-          <article class="video_card video_card3">
+          <article class="video_card video_card4">
             <h3 class="video_card-title">Сергей Трофимов</h3>
             <span class="video_card-text">ЛЮБЭ — Выйду в поле с конем</span>
           </article>
@@ -169,19 +226,26 @@
         </div>
         <div class="info">
           <ul class="info_list">
+            <li class="info_address">
+              <address class="address">СПБ, 6-я Линия ВО 42</address>
+            </li>
             <li class="info_tel">
               <a href="tel:88125665656" class="contact_tel">+7 (812) 566 56 56</a>
             </li>
-            <li class="info_address">
-              <address>СПБ, 6-я Линия ВО, 42</address>
-            </li>
+            
           </ul>
         </div>
           
           <!-- КАРТА -->
 
         <div class="map">
-          
+        
+        </div>
+
+        <div class="button-wrap">
+            <button class="button">
+              <p class="btn-title">Вводный урок</p>
+            </button>
         </div>
 
          <!-- ФОРМА -->
